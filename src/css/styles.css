@@ -1,0 +1,77 @@
+:root{
+    --color1:#2A2F4F;
+    --color2:#917FB3;
+    --color3:#E5BEEC;
+    --color4:#FDE2F3;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+a:hover{
+    padding: 1.5rem 1rem;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color1);
+    
+    
+}
+
+.navBar h2 {
+    color: var(--color3);
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+.navBar h2 span{
+    color:var(--color2);
+    font-size: 1.7rem;
+    
+}
+
+.botonera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+.carro{
+    width: 2.5rem;
+    color: white;
+}
+    
+.carrito p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.saludo{
+    text-align: center;
+}
