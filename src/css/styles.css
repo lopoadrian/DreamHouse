@@ -10,20 +10,9 @@ html{
     font-size: 16px;
 }
 
-a{
-    text-decoration: none;
-    color: var(--color3);
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-}
 
-a:hover{
-    padding: 1.5rem 1rem;
-    background-color: var(--color4);
-    color: var(--color1);
-    text-decoration: underline;
-}
+
+
 
 .navBar{
     display: flex;
@@ -44,6 +33,22 @@ a:hover{
     color:var(--color2);
     font-size: 1.7rem;
     
+}
+
+.navBar a{
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    padding: 1.5rem 1rem;
+}
+
+.navBar a:hover{
+    padding: 1.5rem 1rem;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-decoration: underline;
 }
 
 .botonera{
