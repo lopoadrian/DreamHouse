@@ -4,7 +4,11 @@ const ItemListContainer = ({greeting}) => {
     return (
         <div className="saludo">
             <h1>{greeting}</h1>
-            <ItemCount/>
+            <ItemCount 
+                stock={0} 
+                initial={1}
+                onAdd ={(quantity) => console.log('Cantidad Agregada', quantity)}
+            />
         </div>
     )
 }

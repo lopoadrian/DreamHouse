@@ -119,6 +119,12 @@ html{
    
 }
 
+.itemcount-carrito:disabled{
+    color: grey;
+    background-color: #E2DFDE;
+    border-color: var(--color4);
+}
+
 .itemcount-total{
     display: inline;
     padding: 0.7rem 1rem;
