@@ -77,9 +77,13 @@ html{
     font-size: 2rem;
 }
 
-.saludo{
+.cuerpo{
     text-align: center;
+    background-color: var(--color4);
+    padding: 2rem;
 }
+
+
 
 .itemcount-botonera{
     border: var(--color2) 3px solid;
@@ -132,4 +136,41 @@ html{
     color: var(--color1);
     font-weight: 700;
     border-radius: 1rem;
+}
+
+.Items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    
+}
+
+.Items img{
+    width: 328px;
+    height: 328px;
+}
+
+.Items article{
+    background-color: var(--color2);
+    padding: 0 2rem;
+}
+
+.Items button{
+    margin: 1rem;
+    border: white 3px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.Items button:active{
+    background-color: var(--color2);
+    color: white;
+    font-weight: 700;
+   
+}
+
+.Items p{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }

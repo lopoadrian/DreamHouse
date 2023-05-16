@@ -1,14 +1,29 @@
-import ItemCount from "../ItemCount/ItemCount.js"
+import { useState,useEffect } from "react"
+import { getProducts } from "../../asyncMock"
+import ItemList from "../ItemList/ItemList.js"
+
+
 
 const ItemListContainer = ({greeting}) => {
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        getProducts()
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }, [])
+
     return (
-        <div className="saludo">
+        <div className="cuerpo">
             <h1>{greeting}</h1>
-            <ItemCount 
-                stock={0} 
-                initial={1}
-                onAdd ={(quantity) => console.log('Cantidad Agregada', quantity)}
+            <ItemList 
+                products = {products}
             />
+           
         </div>
     )
 }
