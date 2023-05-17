@@ -1,18 +1,22 @@
-
+import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemsDetailContainer/ItemsDetailContainer';
 import './css/styles.css';
 import './css/normalize.css'
-import ItemDetailContainer from './components/ItemsDetailContainer/ItemsDetailContainer';
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <ItemListContainer 
-        greeting={'Bienvenido a la tienda de tu sueños'}
-      />
-      <ItemDetailContainer/>
+    <div className='App'>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={ <ItemListContainer/> } />
+          <Route path='/category/:categoryId' element={ <ItemListContainer/> } />
+          <Route path='/item/:itemId' element={ <ItemDetailContainer/> } />
+          <Route path='*' element={ <h1>404 NOT FOUND</h1> } />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
