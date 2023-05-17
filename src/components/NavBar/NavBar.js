@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className="botonera">
                <NavLink to={`/category/bazar`} >Bazar</NavLink>
                <NavLink to={`/category/textil`} >Textil</NavLink>
-               <NavLink to={`/category/libros`} >Libros</NavLink>
+               <NavLink to={`/category/libros`}  >Libros</NavLink>
             </div>
             <CartWidget /> 
         </nav>

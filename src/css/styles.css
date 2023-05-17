@@ -51,6 +51,9 @@ html{
     text-decoration: underline;
 }
 
+.enlaceCategoria{
+   color: white;
+}
 .botonera{
     display: flex;
     align-items: center;
@@ -154,7 +157,7 @@ html{
 
 .Items article{
     background-color: var(--color2);
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     border-radius: 2rem;
 }
 
@@ -189,4 +192,24 @@ html{
 .Detail section {
     font-weight: bold;
 
+}
+
+section{
+    margin-bottom: 2rem;
+}
+footer a{
+    color: var(--color1);
+    text-decoration: none;
+    border: var(--color1) 3px solid;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+footer a:active{
+    background-color: var(--color2);
+    color: white;
+    font-weight: 700;
+    border-color: white;
 }
