@@ -15,7 +15,7 @@ const products = [
         category: "textil",
         img:'https://http2.mlstatic.com/D_NQ_NP_928693-MLA49797709099_042022-O.jpg',
         stock: 15,
-        description: 'Medida: 150 x 180 cm.'
+        description: 'Medida: 150 x 180 cm'
     },
     {
         id: '3',
@@ -29,7 +29,7 @@ const products = [
 
     {
         id: '4',
-        name: '  Kit X12 Utensilios De Cocina ',
+        name: '  Kit X12 Utensilios ',
         price: 9999,
         category: "bazar",
         img:'https://http2.mlstatic.com/D_NQ_NP_782996-MLA53125001709_012023-O.webp',

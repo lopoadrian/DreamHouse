@@ -11,9 +11,6 @@ html{
 }
 
 
-
-
-
 .navBar{
     display: flex;
     align-items: center;
@@ -51,9 +48,7 @@ html{
     text-decoration: underline;
 }
 
-.enlaceCategoria{
-   color: white;
-}
+
 .botonera{
     display: flex;
     align-items: center;
@@ -64,21 +59,27 @@ html{
 
 .carrito{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-
+    gap:  1rem;
 }
 
 .carro{
     width: 2.5rem;
-    color: white;
+    padding: 0.5rem;  
 }
+
+
+
+
     
 .carrito p{
     font-weight: 700;
     font-size: 2rem;
+    
 }
+
+
 
 .cuerpo , .Detail{
     text-align: center;
@@ -212,4 +213,106 @@ footer a:active{
     color: white;
     font-weight: 700;
     border-color: white;
+}
+
+.carritoItems{
+    background-color: var(--color2);
+    border-radius: 1rem;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px #767579;
+    
+}
+
+.cart{
+    background-color: var(--color4);
+    padding: 1rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cart-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.cart-total .limpiar{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 15rem;
+    height: 75px;
+    padding: 1rem;
+    border-radius: 2rem;
+   
+    background-color: #4c4cb1;
+    color: white;
+    border: none;
+}
+
+.cart-total .limpiar:hover{
+    background-color: #917FB3;
+    color: black;
+}
+
+.cart-total .total{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 10rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: #38ad38;
+    color: white;
+    
+}
+
+
+.carritoItems img{
+    width: 120px;
+    height: 90px;
+    margin: 1rem;
+}
+.carritoItems h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.carritoItems p{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.carritoItems button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #cc3333;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.carritoItems button:active{
+    background-color: #fd7474;
+    color: black;
+}
+
+.checkout{
+    background-color: #38ad38;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color: white ;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.checkout:hover{
+    background-color: #7be67b;
+    color: black;
 }
