@@ -22,11 +22,12 @@ const CheckoutForm = ( {onConfirm} ) => {
 
     return(
         <div >
-            <form onSubmit={handleConfirm} className="">
+            <form onSubmit={handleConfirm} className="formulario">
                 <label>
                     Nombre
                 </label>
                 <input
+                placeholder="Ingrese su Nombre"
                 className=""
                 type="text"
                 value={name}
@@ -36,6 +37,7 @@ const CheckoutForm = ( {onConfirm} ) => {
                     Telefono
                 </label>
                 <input
+                placeholder="Ingrese su Telefono"
                 className=""
                 type="text"
                 value={phone}
@@ -45,6 +47,7 @@ const CheckoutForm = ( {onConfirm} ) => {
                     Email
                 </label>
                 <input
+                placeholder="Ingrese su Correo"
                 className=""
                 type="text"
                 value={email}

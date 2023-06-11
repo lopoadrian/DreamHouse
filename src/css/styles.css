@@ -26,11 +26,15 @@ html{
     font-weight: 700;
 }
 
+
+
 .navBar h2 span{
     color:var(--color2);
     font-size: 1.7rem;
     
 }
+
+
 
 .navBar a{
     text-decoration: none;
@@ -41,12 +45,34 @@ html{
     padding: 1.5rem 1rem;
 }
 
-.navBar a:hover{
-    padding: 1.5rem 1rem;
+
+.botonera-textil:hover{
+    padding: 3.5rem 1rem;
     background-color: var(--color4);
     color: var(--color1);
     text-decoration: underline;
+} 
+.botonera-bazar:hover{
+    padding: 3.5rem 1rem;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-decoration: underline;
+} 
+.botonera-libros:hover{
+    padding: 3.5rem 1rem;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-decoration: underline;
+} 
+
+
+.navBar-inicio:hover{
+    padding: 1.5rem 1rem;
+    background-color: var(--color4);
+    color: black;
+    text-decoration: underline;
 }
+
 
 
 .botonera{
@@ -81,10 +107,15 @@ html{
 
 
 
-.cuerpo , .Detail{
+.cuerpo{
     text-align: center;
     background-color: var(--color4);
-    padding: 2rem;
+    padding: 2rem 2rem 12rem;
+}
+
+.cuerpo h1{
+    color: var(--color1);
+    text-decoration: underline;
 }
 
 
@@ -148,18 +179,22 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around; 
+    gap: 1rem;
+    
     
 }
 
 .Items img{
-    width: 328px;
-    height: 328px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
 }
 
 .Items article{
     background-color: var(--color2);
     padding: 2rem 2rem;
     border-radius: 2rem;
+    box-shadow: 1px 1px 5px black;
 }
 
 .Items button{
@@ -182,17 +217,36 @@ html{
     
 }
 
+.Detail{
+    text-align: center;
+    background-color: var(--color4);
+    padding: 2rem 0 5rem;
+    margin: 0;
+}
 
 .Detail article {
     background-color: var(--color2);
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0 28rem;
     border-radius: 2rem;
+   
+}
+
+.Detail article img{
+    min-width: 20%;
+    width: 30%;
+    margin: 0;
 }
 
 .Detail section {
     font-weight: bold;
+    margin: 0;
 
+}
+
+.Detail section p{
+    margin: 1rem 0;
+    
 }
 
 section{
@@ -308,6 +362,7 @@ footer a:active{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .carrito-vacio h1{
@@ -353,3 +408,82 @@ footer a:active{
     background-color: #7be67b;
     color: black;
 }
+
+.compra{
+    text-align: center;
+    background-color: var(--color4);
+    padding: 2rem 2rem 15rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color1);
+    width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color3);
+    box-shadow: 1px 1px 10px black;
+}
+
+
+
+.formulario input{
+    width: 50%;
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+
+
+
+.formulario button{
+    margin: 1rem;
+    background-color: var(--color3);
+    border: none;
+    color: var(--color1);
+    font-weight: 700;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+.formulario button:active{
+    background-color: var(--color2);
+    color: white;
+
+}
+
+.compra-order{
+    text-align: center;
+    background-color: var(--color4);
+    padding: 1rem 1rem 44rem 1rem;
+    
+   
+}
+
+.compra-order h1{
+    background-color: var(--color2);
+    display: block;
+    margin: 1rem 15rem;
+    padding: 1rem;
+}
+
+.compra-order h2{
+    background-color: var(--color2);
+    display: block;
+    margin: 1rem 25rem;
+    padding: 1rem;
+    font-weight: 700;
+   
+}
+
