@@ -3,16 +3,17 @@ import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
 
+
 const Cart = () =>{
     const {cart, clearCart, totalQuantity, total} = useContext(CartContext)
 
     if (totalQuantity === 0) {
         return(
-            <div>
+            <div className="carrito-vacio">
                 <h1>
-                    No hay items en el carrito
+                    Carrito vacio! puedes regresar al incio con el siguiente boton
                 </h1>
-                <Link to='/' className="Option">Productos</Link>
+                <Link to='/' className="Option">Regresar</Link>
             </div>
         )
     }
@@ -23,7 +24,7 @@ const Cart = () =>{
             <div className="cart-total">
                 <button className="limpiar" onClick={() => clearCart()}> Limpiar Carrito </button>
                 <p className="total">Total: ${total}</p>  
-            <Link to='/checkout' className="checkout">checkout</Link>
+            <Link to='/Checkout' className="checkout">checkout</Link>
             </div> 
         </div>
     )
